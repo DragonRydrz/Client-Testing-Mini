@@ -22,6 +22,12 @@ describe('functions', () => {
       expect(addNums).to.be.a('function');
     });
     // write a test to check if 'addNums' returns the expected value
+    it('should return the sum of the params', () => {
+      const x = 5;
+      const y = 4;
+      const sum = addNums(x, y);
+      expect(sum).to.be.equal(9);
+    });
     // i.e. if is called addNums(1, 2); the return value should be 3.
   });
 
